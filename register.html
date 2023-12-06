@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 40px;
+   
+      border-radius: 5px;
+      background-color: #ccc;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+	
+    background-color: #3C91E6;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .error {
+      color: red;
+    }
+
+    h1 {
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Connectilab Register</h1>
+
+  <form action="/signup" method="post">
+    <input type="text" name="username" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
+    <select name="role">
+      <option value="">Select a role</option>
+      <option value="admin">Student</option>
+      <option value="user">Teacher</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

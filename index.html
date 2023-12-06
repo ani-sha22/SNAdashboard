@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>Dashboard</title>
+	<style>button {
+		
+		padding: 10px;
+		align-items: center;
+		background-color: rgb(45, 187, 243);
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+		
+	  }</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bx-universal-access'></i>
+			<span class="text">Connectilab</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="profile.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+			<li>
+				<a href="fdback.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Feedback</span>
+				</a>
+			</li>
+			
+			<li>
+				<a href="discuss.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Discussion Forum</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+		
+			
+			<a href="profile.html" class="profile">
+				<p>Anisha</p>
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>4</h3>
+						<p>Requests</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>50</h3>
+						<p>Connects</p>
+					</span>
+				</li>
+				
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+					
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Users</th>
+								<th> Courses</th>
+								<th>Collaborate</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Ani</p>
+								</td>
+								<td>7 <select name="role">
+									<option value="">Courses</option>
+									<option value="admin">Student</option>
+									<option value="user">Teacher</option>
+								  </select></td>
+								<td><span class="status completed">Connected</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Anis</p>
+								</td>
+								<td>5 <select name="role">
+									<option value="">Courses</option>
+									<option value="admin">Student</option>
+									<option value="user">Teacher</option>
+								  </select></td>
+								<td><button onclick="openGmailCompose('anisha.chakraborty20@st.niituniversity.in', 'Hey! I want to collab with you!')">Invite</button></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>John </p>
+								</td>
+								<td>6 <select name="role">
+									<option value="">Courses</option>
+									<option value="admin">Student</option>
+									<option value="user">Teacher</option>
+								  </select></td>
+								<td><button onclick="openGmailCompose('anisha.chakraborty20@st.niituniversity.in', 'Hey! I want to collab with you!')">Invite</button></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Anisha</p>
+								</td>
+								<td>4 <select name="role">
+									<option value="">Courses</option>
+									<option value="admin">Student</option>
+									<option value="user">Teacher</option>
+								  </select></td>
+								<td><button onclick="openGmailCompose('anisha.chakraborty20@st.niituniversity.in', 'Hey! I want to collab with you!')">Invite</button></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Chakra</p>
+								</td>
+								<td>6 <select name="role">
+									<option value="">Courses</option>
+									<option value="admin">Student</option>
+									<option value="user">Teacher</option>
+								  </select></td>
+								<td><span class="status completed">Connected</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+					  <h3>Resource Manager</h3>
+					  <i class="bx bx-plus" id="add-resource-btn"></i>
+					  <i class="bx bx-filter" id="filter-resource-btn"></i>
+					</div>
+				  
+					<div class="todo-list">
+					  <ul class="todo-items">
+						</ul>
+					</div>
+				  
+					<div class="modal" id="add-resource-modal">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h3>Add Resource</h3>
+						  
+						</div>
+				  
+						<div class="modal-body">
+						  <label for="resource-name">Resource Name:</label>
+						  <input type="text" id="resource-name" required>
+						</div>
+				  
+						<div class="modal-footer">
+						  <button id="save-resource-btn">Save</button>
+						  <button id="cancel-resource-btn">Cancel</button>
+						</div>
+					  </div>
+					</div>
+				  
+					
+				  
+						
+					  
+				  </div>
+				  <script src="todo.js"></script>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+	<script>
+		function openGmailCompose(recipientEmail, invitationMessage) {
+			window.open('mailto:' + recipientEmail + '?subject=Invitation to join course&body=' + invitationMessage);
+		  }		  
+	</script>
+	<script src="script.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>Dashboard</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bx-universal-access'></i>
+			<span class="text">Connectilab</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="profile.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+			<li>
+				<a href="fdback.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Feedback</span>
+				</a>
+			</li>
+			
+			<li>
+				<a href="discuss.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Discussion Forum</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+		
+			
+			<a href="#" class="profile">
+				<p>Anisha</p>
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Profile</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .profile-container {
+      width: 500px;
+	  margin-top: 50px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:  #a9a9a9;
+      border-radius: 5px;
+    }
+
+    .profile-header {
+      text-align: center;
+    }
+
+    .profile-header h1 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .profile-header p {
+      font-size: 16px;
+    }
+
+    .profile-details {
+      margin-top: 20px;
+    }
+
+    .profile-details dt {
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    .profile-details dd {
+      margin-bottom: 0;
+    }
+
+	
+	  
+	  input,
+	  select {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	  }
+	  
+	  button {
+		width: 100%;
+		padding: 10px;
+		background-color:  rgb(45, 187, 243);
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+	  }
+	  
+	  button:hover {
+		opacity: 0.8;
+	  }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+	<form action="/update-user"
+ 
+method="post">
+
+  
+<input
+ 
+type="text"
+ 
+name="username"
+ 
+placeholder="Anisha">
+
+  
+<input
+ 
+type="email"
+ 
+name="email"
+ 
+placeholder="anisha.chakraborty20@st.niituniversity.in">
+
+  
+<input type="number" name="year" placeholder="2020">
+  <select name="stream">
+    <option value="">CSE</option>
+    <option value="Computer Science">CSE</option>
+
+    
+<option
+ 
+value="Electronics and Communication Engineering">ECE</option>
+
+    
+
+<option
+ 
+value="Civil Engineering">BIO</option></select>
+
+<select multiple id="dropdown-box-with-checklist">
+	<option value="1">Course 1</option>
+	<option value="2">Course 2</option>
+	<option value="3">Course 3</option>
+  </select>
+  
+  <script>
+	document.getElementById("dropdown-box-with-checklist").addEventListener("change", function() {
+	  var selectedOptions = this.options;
+  
+	  if (selectedOptions.length === 0) {
+		alert("Please select at least one option");
+	  }
+	});
+  </script>
+</select>
+  <button type="submit">Update</button>
+</form>
+    </div>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
+	<script src="update.js"></script>
+</body>
+</html>

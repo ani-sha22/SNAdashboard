@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title> Connectilab Login</title>
+<style>
+
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+ 
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+
+  margin-right:60px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  width: 107%;
+  padding: 10px;
+  align-items: center;
+  background-color: rgb(45, 187, 243);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: red;
+}
+
+h1,p {
+    text-align: center;
+  }
+  
+</style>
+</head>
+<body >
+<h1 > Connectilab Login</h1>
+
+<form action="index.html" method="post">
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+
+  <button type="submit">Login</button>
+</form>
+
+<p>Don't have an account? <a href="register.html">Register now</a>.</p>
+<script src="login.js"></script>
+
+</body>
+</html>
